@@ -11,8 +11,25 @@
   width: 100%;
 }
 
-.justify-center {
-  justify-content: center;
+.text-center {
+  text-align: center;
+}
+
+.add-entry {
+  margin-top: 10rem;
+  padding: 10px 60px;
+  background-color: white;
+  box-shadow: 3px 3px 0 black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.add-entry:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.font-family {
+  font-family: "Courier New", Courier, monospace;
 }
 
 .bg-modal {
