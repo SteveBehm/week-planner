@@ -88,3 +88,12 @@
 .margin-right {
   margin-right: 2rem;
 }
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.box-button {
+  border: 3px solid black;
+  background-color: white;
+}
