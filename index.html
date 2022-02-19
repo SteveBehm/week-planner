@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container font-family">
+  <div class="container font-family main-page">
     <div class="row">
       <div class="column-full text-center">
         <h1>Weekly Planner</h1>
@@ -19,33 +19,35 @@
       </div>
     </div>
   </div>
-  <div class="bg-modal font-family">
-    <div class="modal-content">
-      <div class="row full-width center-justified margin-none">
-        <h2 class="modal-header">Add Entry</h2>
-      </div>
-      <div class="row full-width margin-none">
-        <select id="day-of-week" class="margin-right font-family" name="day-of-week">
-          <option value="" disabled selected>Day of Week</option>
-          <option value="monday">Monday</option>
-          <option value="tuesday">Tuesday</option>
-          <option value="wednesday">Wednesday</option>
-          <option value="thursday">Thurdsay</option>
-          <option value="friday">Friday</option>
-          <option value="saturday">Saturday</option>
-          <option value="sunday">Sunday</option>
-        </select>
-        <input type="time" id="time" name="time" min="9:00" max="18:00" required>
-      </div>
-      <div class="row full-width margin-none">
-        <textarea class="text-area font-family" placeholder="Description"></textarea>
-      </div>
-      <div class="row full-width right-align margin-none">
-        <button class="submit-entry">Submit</button>
+  <form>
+    <div class="bg-modal font-family">
+      <div class="modal-content">
+        <div class="row full-width center-justified margin-none">
+          <h2 class="modal-header">Add Entry</h2>
+        </div>
+        <div class="row full-width margin-none">
+          <select id="day-of-week" class="margin-right font-family" name="day-of-week">
+            <option value="" disabled selected>Day of Week</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thurdsay</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+          </select>
+          <input type="time" id="time" name="time" min="00:00" max="24:00" required>
+        </div>
+        <div class="row full-width margin-none">
+          <textarea class="text-area font-family" placeholder="Description"></textarea>
+        </div>
+        <div class="row full-width right-align margin-none">
+          <button class="submit-entry">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+  </form>
+  <div class="container font-family second-view hidden">
     <div class="row">
       <div class="column-full text-center">
         <h1>
@@ -55,13 +57,13 @@
     </div>
     <div class="row">
       <div class="row column-full margin-bottom space-evenly">
-        <button class="box-button">Sunday</button>
-        <button class="box-button">Monday</button>
-        <button class="box-button">Tuesday</button>
-        <button class="box-button">Wednesday</button>
-        <button class="box-button">Thursday</button>
-        <button class="box-button">Friday</button>
-        <button class="box-button">Saturday</button>
+        <button class="box-button font-family">Sunday</button>
+        <button class="box-button font-family">Monday</button>
+        <button class="box-button font-family">Tuesday</button>
+        <button class="box-button font-family">Wednesday</button>
+        <button class="box-button font-family">Thursday</button>
+        <button class="box-button font-family">Friday</button>
+        <button class="box-button font-family">Saturday</button>
       </div>
     </div>
     <div class="row">
