@@ -17,4 +17,26 @@ function handleSubmitEntry(event) {
   $secondView.className = 'container second-view font-family';
 
   document.querySelector('.bg-modal').style.display = 'none';
+  domTable();
+}
+
+function domTable(data) {
+  var $table = document.createElement('table');
+  var $thead = document.createElement('thead');
+  var $tr = document.createElement('tr');
+  var $th = document.createElement('th');
+
+  $table.appendChild($thead);
+  $thead.appendChild($tr);
+  $tr.appendChild($th);
+  $tr.append($th);
+
+  var $tbody = document.createElement('tbody');
+  var $td = document.createElement('td');
+
+  for (let i = 0; i < 9; i++) {
+    $tbody.append($tr);
+    $tr.append($td);
+    $tr.append($td);
+  }
 }
